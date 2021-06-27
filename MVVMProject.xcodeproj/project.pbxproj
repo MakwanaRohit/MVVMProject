@@ -3,18 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9381F58B268848E800A388D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F58A268848E800A388D8 /* AppDelegate.swift */; };
 		9381F58D268848E800A388D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F58C268848E800A388D8 /* SceneDelegate.swift */; };
-		9381F58F268848E800A388D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F58E268848E800A388D8 /* ViewController.swift */; };
+		9381F58F268848E800A388D8 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F58E268848E800A388D8 /* UsersViewController.swift */; };
 		9381F592268848E800A388D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9381F590268848E800A388D8 /* Main.storyboard */; };
 		9381F594268848E900A388D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9381F593268848E900A388D8 /* Assets.xcassets */; };
 		9381F597268848E900A388D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9381F595268848E900A388D8 /* LaunchScreen.storyboard */; };
 		9381F5A2268848E900A388D8 /* MVVMProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5A1268848E900A388D8 /* MVVMProjectTests.swift */; };
 		9381F5AD268848E900A388D8 /* MVVMProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5AC268848E900A388D8 /* MVVMProjectUITests.swift */; };
+		9381F5BC26884A8500A388D8 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 9381F5BB26884A8500A388D8 /* Moya */; };
+		9381F5BF26884CAD00A388D8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5BE26884CAD00A388D8 /* User.swift */; };
+		9381F5C126884CE800A388D8 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5C026884CE800A388D8 /* UsersViewModel.swift */; };
+		9381F5C926884E7700A388D8 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5C826884E7700A388D8 /* UserDetailsViewController.swift */; };
+		9381F5CD26884EA500A388D8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5CC26884EA500A388D8 /* APIRouter.swift */; };
+		9381F5D026884EC000A388D8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5CF26884EC000A388D8 /* NetworkManager.swift */; };
+		9381F5D226884EE900A388D8 /* Extension+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5D126884EE900A388D8 /* Extension+TableView.swift */; };
+		9381F5D7268855F400A388D8 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5D5268855F400A388D8 /* UserTableViewCell.swift */; };
+		9381F5D8268855F400A388D8 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9381F5D6268855F400A388D8 /* UserTableViewCell.xib */; };
+		9381F5DF268870FA00A388D8 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5DE268870FA00A388D8 /* UserDetailViewModel.swift */; };
+		9381F5E22688776800A388D8 /* UsersListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5E12688776800A388D8 /* UsersListTests.swift */; };
+		9381F5EA2688856B00A388D8 /* UserDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5E92688856B00A388D8 /* UserDetailsTests.swift */; };
+		9381F5EC2688876500A388D8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9381F5EB2688876500A388D8 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +51,7 @@
 		9381F587268848E800A388D8 /* MVVMProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9381F58A268848E800A388D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9381F58C268848E800A388D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9381F58E268848E800A388D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9381F58E268848E800A388D8 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		9381F591268848E800A388D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9381F593268848E900A388D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9381F596268848E900A388D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +62,18 @@
 		9381F5A8268848E900A388D8 /* MVVMProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9381F5AC268848E900A388D8 /* MVVMProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMProjectUITests.swift; sourceTree = "<group>"; };
 		9381F5AE268848E900A388D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9381F5BE26884CAD00A388D8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9381F5C026884CE800A388D8 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		9381F5C826884E7700A388D8 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		9381F5CC26884EA500A388D8 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		9381F5CF26884EC000A388D8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9381F5D126884EE900A388D8 /* Extension+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TableView.swift"; sourceTree = "<group>"; };
+		9381F5D5268855F400A388D8 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		9381F5D6268855F400A388D8 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		9381F5DE268870FA00A388D8 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		9381F5E12688776800A388D8 /* UsersListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListTests.swift; sourceTree = "<group>"; };
+		9381F5E92688856B00A388D8 /* UserDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTests.swift; sourceTree = "<group>"; };
+		9381F5EB2688876500A388D8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9381F5BC26884A8500A388D8 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +125,12 @@
 		9381F589268848E800A388D8 /* MVVMProject */ = {
 			isa = PBXGroup;
 			children = (
-				9381F58A268848E800A388D8 /* AppDelegate.swift */,
-				9381F58C268848E800A388D8 /* SceneDelegate.swift */,
-				9381F58E268848E800A388D8 /* ViewController.swift */,
-				9381F590268848E800A388D8 /* Main.storyboard */,
+				9381F5C326884E1100A388D8 /* App */,
+				9381F5BD26884ACE00A388D8 /* ViewController */,
+				9381F5C226884DFB00A388D8 /* Storyboard */,
+				9381F5CE26884EB200A388D8 /* Services */,
+				9381F5D326884F0200A388D8 /* Support&Constant */,
 				9381F593268848E900A388D8 /* Assets.xcassets */,
-				9381F595268848E900A388D8 /* LaunchScreen.storyboard */,
 				9381F598268848E900A388D8 /* Info.plist */,
 			);
 			path = MVVMProject;
@@ -114,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				9381F5A1268848E900A388D8 /* MVVMProjectTests.swift */,
+				9381F5E12688776800A388D8 /* UsersListTests.swift */,
+				9381F5E92688856B00A388D8 /* UserDetailsTests.swift */,
 				9381F5A3268848E900A388D8 /* Info.plist */,
 			);
 			path = MVVMProjectTests;
@@ -126,6 +154,128 @@
 				9381F5AE268848E900A388D8 /* Info.plist */,
 			);
 			path = MVVMProjectUITests;
+			sourceTree = "<group>";
+		};
+		9381F5BD26884ACE00A388D8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5C426884E2B00A388D8 /* Users */,
+				9381F5CA26884E7C00A388D8 /* UserDetails */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9381F5C226884DFB00A388D8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9381F590268848E800A388D8 /* Main.storyboard */,
+				9381F595268848E900A388D8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9381F5C326884E1100A388D8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9381F58A268848E800A388D8 /* AppDelegate.swift */,
+				9381F58C268848E800A388D8 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9381F5C426884E2B00A388D8 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5C526884E3C00A388D8 /* View */,
+				9381F5C626884E4B00A388D8 /* Model */,
+				9381F5C726884E5300A388D8 /* ViewModel */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		9381F5C526884E3C00A388D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9381F58E268848E800A388D8 /* UsersViewController.swift */,
+				9381F5D9268855FD00A388D8 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9381F5C626884E4B00A388D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5BE26884CAD00A388D8 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9381F5C726884E5300A388D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5C026884CE800A388D8 /* UsersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9381F5CA26884E7C00A388D8 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5CB26884E8800A388D8 /* View */,
+				9381F5E02688711100A388D8 /* ViewModel */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		9381F5CB26884E8800A388D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5C826884E7700A388D8 /* UserDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9381F5CE26884EB200A388D8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5CC26884EA500A388D8 /* APIRouter.swift */,
+				9381F5CF26884EC000A388D8 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9381F5D326884F0200A388D8 /* Support&Constant */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5D426884F0800A388D8 /* Extensions */,
+				9381F5EB2688876500A388D8 /* Constant.swift */,
+			);
+			path = "Support&Constant";
+			sourceTree = "<group>";
+		};
+		9381F5D426884F0800A388D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5D126884EE900A388D8 /* Extension+TableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9381F5D9268855FD00A388D8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5D5268855F400A388D8 /* UserTableViewCell.swift */,
+				9381F5D6268855F400A388D8 /* UserTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9381F5E02688711100A388D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9381F5DE268870FA00A388D8 /* UserDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +294,9 @@
 			dependencies = (
 			);
 			name = MVVMProject;
+			packageProductDependencies = (
+				9381F5BB26884A8500A388D8 /* Moya */,
+			);
 			productName = MVVMProject;
 			productReference = 9381F587268848E800A388D8 /* MVVMProject.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +368,9 @@
 				Base,
 			);
 			mainGroup = 9381F57E268848E800A388D8;
+			packageReferences = (
+				9381F5BA26884A8500A388D8 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 9381F588268848E800A388D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9381F5D8268855F400A388D8 /* UserTableViewCell.xib in Resources */,
 				9381F597268848E900A388D8 /* LaunchScreen.storyboard in Resources */,
 				9381F594268848E900A388D8 /* Assets.xcassets in Resources */,
 				9381F592268848E800A388D8 /* Main.storyboard in Resources */,
@@ -258,9 +415,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9381F58F268848E800A388D8 /* ViewController.swift in Sources */,
+				9381F5D226884EE900A388D8 /* Extension+TableView.swift in Sources */,
+				9381F5BF26884CAD00A388D8 /* User.swift in Sources */,
+				9381F5D026884EC000A388D8 /* NetworkManager.swift in Sources */,
+				9381F5DF268870FA00A388D8 /* UserDetailViewModel.swift in Sources */,
+				9381F5CD26884EA500A388D8 /* APIRouter.swift in Sources */,
+				9381F5D7268855F400A388D8 /* UserTableViewCell.swift in Sources */,
+				9381F58F268848E800A388D8 /* UsersViewController.swift in Sources */,
+				9381F5C926884E7700A388D8 /* UserDetailsViewController.swift in Sources */,
 				9381F58B268848E800A388D8 /* AppDelegate.swift in Sources */,
 				9381F58D268848E800A388D8 /* SceneDelegate.swift in Sources */,
+				9381F5C126884CE800A388D8 /* UsersViewModel.swift in Sources */,
+				9381F5EC2688876500A388D8 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +434,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9381F5E22688776800A388D8 /* UsersListTests.swift in Sources */,
 				9381F5A2268848E900A388D8 /* MVVMProjectTests.swift in Sources */,
+				9381F5EA2688856B00A388D8 /* UserDetailsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +606,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MVVMProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,7 +614,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MVVMProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,6 +625,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MVVMProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +633,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MVVMProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -587,6 +757,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9381F5BA26884A8500A388D8 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9381F5BB26884A8500A388D8 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9381F5BA26884A8500A388D8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9381F57F268848E800A388D8 /* Project object */;
 }

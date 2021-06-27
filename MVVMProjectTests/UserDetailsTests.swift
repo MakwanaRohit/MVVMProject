@@ -1,5 +1,5 @@
 //
-//  MVVMProjectTests.swift
+//  UserDetailsTests.swift
 //  MVVMProjectTests
 //
 //  Created by Rohit Makwana on 27/06/21.
@@ -8,14 +8,16 @@
 import XCTest
 @testable import MVVMProject
 
-class MVVMProjectTests: XCTestCase {
+class UserDetailsTests: XCTestCase {
+
+    private var userDetailsViewModel : UserDetailViewModel!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.userDetailsViewModel = UserDetailViewModel(UserModel.with())
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        self.userDetailsViewModel = nil
     }
 
     func testExample() throws {
@@ -28,5 +30,13 @@ class MVVMProjectTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testSuccessData() {
+        XCTAssert(self.userDetailsViewModel.userModel.id == UserModel.with().id)
+    }
+    
+    func testFailData() {
+        XCTAssert(self.userDetailsViewModel.userModel.id != -1)
     }
 }
