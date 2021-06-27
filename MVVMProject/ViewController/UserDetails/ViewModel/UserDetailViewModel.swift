@@ -8,8 +8,8 @@
 import Foundation
 
 class UserDetailViewModel {
-    private(set) var userModel : UserModel!
-    init(_ userModel: UserModel) {
+    private(set) var userModel : UserModel?
+    init(_ userModel: UserModel?) {
         self.userModel = userModel
     }
 }

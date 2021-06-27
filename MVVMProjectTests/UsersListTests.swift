@@ -45,7 +45,7 @@ class UsersList: XCTestCase {
             XCTFail("Delay interrupted or API time out")
         }
     }
-        
+    
     func testSuccessParser() {
         let json = """
       [
@@ -54,20 +54,20 @@ class UsersList: XCTestCase {
         "title": "nonummy integer",
         "subtitle": "sapien arcu",
         "content": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi."
-            }
-       ]
+        }
+      ]
       """.data(using: .utf8)!
         let users = try! JSONDecoder().decode(Users.self, from: json)
         XCTAssertNotNil(users)
-        XCTAssertEqual(users.first?.id, UserModel.with().id)
+        XCTAssertEqual(users.first?.id, 1)
     }
 }
 
 extension UserModel {
     static func with(id: Int = 1,
-        title: String = "Swift MVVM title",
-        subtitle: String = "Swift MVVM subtitle",
-        content: String = "Swift MVVM content") -> UserModel {
+                     title: String = "nonummy integer",
+                     subtitle: String = "Swift MVVM subtitle",
+                     content: String = "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.") -> UserModel {
         return UserModel(id: id, title: title, subtitle: subtitle, content: content)
     }
 }
