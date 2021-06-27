@@ -9,8 +9,8 @@ import Foundation
 
 class UsersViewModel {
     private var networkManager : Networkable!
-    var currentPage : Int = 0
-    var totalPage : Int = 0
+    var currentPage: Int = 0
+    var totalPage: Int = 0
     private(set) var users : Users! = [] {
         didSet {
             self.currentPage = 1

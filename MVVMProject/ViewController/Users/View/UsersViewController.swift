@@ -44,7 +44,7 @@ class UsersViewController: UIViewController {
 extension UsersViewController {
     
     fileprivate func initialization() {
-        self.title = "Users"
+        self.title = Constant.users
         initViewModel()
         usersTableView.setActivityLoader()
     }
