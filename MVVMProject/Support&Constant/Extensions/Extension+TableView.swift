@@ -24,12 +24,13 @@ extension UITableView {
     func addPullToRefresh(controller: UIViewController,
                           action: Selector) {
         let refreshControl = UIRefreshControl()
-        refreshControl.tintColor = .systemRed
+        refreshControl.tintColor = .white
         self.refreshControl = refreshControl
+        self.refreshControl?.backgroundColor = .lightGray
         refreshControl.addTarget(controller, action: action, for: .valueChanged)
     }
     
-    func setActivityLoader(_ color: UIColor = .systemRed,
+    func setActivityLoader(_ color: UIColor = .black,
                            style: UIActivityIndicatorView.Style = .large) {
         let loader = UIActivityIndicatorView(style: style)
         loader.color = color

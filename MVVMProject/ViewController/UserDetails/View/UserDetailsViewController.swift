@@ -28,8 +28,8 @@ class UserDetailsViewController: UIViewController {
 //MARK:- Initialization
 extension UserDetailsViewController {
     func initialization() {
-        self.title = Constant.userContent
         if let userData = userDetailViewModel {
+            self.title = userData.userModel.title
             self.detailsTextView.text = userData.userModel.content
         }
     }
